@@ -1,0 +1,10 @@
+Package: StooqAPI
+Type: Package
+Title: Get Stock Data From Stooq
+Version: 0.1.0
+Author: Mikolaj Zapalski <zapalski@student.agh.edu.pl>
+Maintainer: Mikolaj Zapalski <zapalski@student.agh.edu.pl>
+Description: Get dataframe based on the ticker provided, addnotionally you can add wanted time interval. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
