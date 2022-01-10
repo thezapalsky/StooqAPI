@@ -1,0 +1,66 @@
+---
+title: "Prezentacja pakietu R - StooqAPI"
+output: html_document
+author: Mikolaj Zapalski
+---
+
+# Bibliotekę należy dodać do RStudio, możemy pobrać ją prosto z serwera Github
+
+```{r, message=FALSE}
+# pobranie i zainstalowanie biblioteki
+library(devtools)
+install_github("thezapalsky/StooqAPI") 
+
+library(StooqAPI)
+```
+# Instrukcja do funkcji "getStooqDataFrame()"
+
+```{r}
+?getStooqDataFrame
+```
+
+## Description
+Method returns data.frame() object for the stock ticker provided. It handles stock, forex and some cryptocurrency symbols.
+
+## Usage
+```{r}
+# getStooqDataFrame(ticker="wig20", interval="w")
+```
+
+## Arguments
+ticker	
+string with stock symbol, examples: ('btc.v', 'wig', 'usdpln', ... )
+
+interval	
+string with interval for the data, examples: ('d', 'w', 'm', 'q', 'y')
+
+## Value
+Returns data.frame() object.
+
+## Examples
+```{r}
+df1 <- getStooqDataFrame("usdpln")
+tail(df1)
+
+df2 <- getStooqDataFrame(ticker="wig", interval="m")
+tail(df2)
+
+df3 <- getStooqDataFrame(ticker="btc.v", interval="d")
+tail(df3)
+```
+
+# Pozostałe funkcje zawarte w pakiecie:
+
+- print.getStooqDataFrame
+- summary.getStooqDataFrame
+- plot.getStooqDataFrame 
+
+# Przykłady użycia:
+
+```{r}
+summary.getStooqDataFrame()
+plot.getStooqDataFrame()
+print.getStooqDataFrame("wig",interval = "y")
+```
+
+
