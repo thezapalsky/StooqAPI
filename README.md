@@ -11,7 +11,7 @@ Method returns data.frame() object for the stock ticker provided. It handles sto
 ## Usage
 
 ```r
-getStooqDataFrame(ticker="wig20", interval="w")
+getStooqDataFrame(ticker="wig", interval="w")
 ```
 
 

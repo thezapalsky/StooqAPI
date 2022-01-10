@@ -2,7 +2,7 @@
 \alias{getStooqDataFrame}
 \title{getStooqDataFrame}
 \usage{
-getStooqDataFrame(ticker="wig20", interval="w")
+getStooqDataFrame(ticker="wig", interval="w")
 }
 \description{
 Method returns data.frame() object for the stock ticker provided. It handles stock, forex and some cryptocurrency symbols.
